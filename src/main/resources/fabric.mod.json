@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "pl3xmap-for-xaero",
+	"version": "${version}",
+	"name": "Pl3xmap-For-Xaero",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/pl3xmap-for-xaero/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.pl3xmap_for_xaero.ExampleMod"
+		],
+		"client": [
+			"com.pl3xmap_for_xaero.ExampleModClient"
+		]
+	},
+	"mixins": [
+		"pl3xmap-for-xaero.mixins.json",
+		{
+			"config": "pl3xmap-for-xaero.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

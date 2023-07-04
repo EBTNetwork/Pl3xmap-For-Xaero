@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "com.pl3xmap_for_xaero.mixin.client",
+	"compatibilityLevel": "JAVA_17",
+	"client": [
+		"ExampleClientMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
